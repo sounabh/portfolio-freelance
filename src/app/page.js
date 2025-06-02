@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
-import RotatingCircle from "./components/RotatingCircle";
+import RotatingCircle from "./components/RotatingCircle.jsx";
 import { motion } from "framer-motion";
 import DescriptionCard from "./components/DescriptionCard";
 import InputButton from "./components/InputButton";
