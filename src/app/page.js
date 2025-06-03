@@ -24,33 +24,33 @@ const FadeInMotion = ({ children, delay = 0.8 }) => (
 
 const Page = () => {
   return (
-    <div className="min-h-screen w-screen bg-white overflow-x-hidden overflow-y-hidden px-6 py-20 relative">
+    <div className="min-h-screen w-screen bg-white overflow-x-hidden overflow-y-hidden px-6 py-17 relative">
       {/* Keyframes injected correctly in JSX */}
       <style>{`
         @keyframes scalePulse {
           0% { transform: scale(1); }
-          100% { transform: scale(1.8); }
+          100% { transform: scale(1.7); }
         }
 
         .spin-custom {
-          animation: scalePulse 17s linear infinite alternate;
+          animation: scalePulse 18s linear infinite alternate;
         }
       `}</style>
 
       {/* Background blobs */}
       <div
         aria-hidden="true"
-        className="absolute top-[-20%] left-[-10%] w-[24%] h-[45%] rounded-full bg-gradient-to-br from-[#d4ba13] via-[#e75f29] to-[#e86c2a] blur-3xl spin-custom"
+        className="absolute top-[-20%] left-[-10%] w-[24%] h-[45%] rounded-full bg-gradient-to-br from-[#eacd10] via-[#f05b20] to-[#e06421] blur-3xl spin-custom"
       />
 
       <div
         aria-hidden="true"
-        className="absolute top-[-30%] left-[26%] w-[45%] h-[45%] rounded-full bg-gradient-to-br from-[#d94930] via-[#e11a1a] to-[#e66037] blur-3xl spin-custom"
+        className="absolute top-[-30%] left-[26%] w-[45%] h-[45%] rounded-full bg-gradient-to-br from-[#d13014] via-[#FF0200] to-[#ea5224] blur-3xl spin-custom"
       />
 
       <div
         aria-hidden="true"
-        className="absolute top-[-25%] right-[-15%] w-[25%] h-[45%] rounded-full bg-gradient-to-br from-[#e1ba1c] via-[#ca7f07] to-[#f06253] blur-3xl spin-custom"
+        className="absolute top-[-25%] right-[-15%] w-[26%] h-[45%] rounded-full bg-gradient-to-br from-[#deb616] via-[#e29212] to-[#f16b5c] blur-3xl spin-custom"
       />
 
       {/* Heading */}
@@ -63,7 +63,7 @@ const Page = () => {
             <RotatingCircle />
             {/* Inner red dot in center */}
             <motion.div
-              className="absolute top-0 right-[30px] transform -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#e11414]"
+              className="absolute top-0 right-[30px] transform -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#FF0200]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, rotate: 360 }}
               transition={{

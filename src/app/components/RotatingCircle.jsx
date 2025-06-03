@@ -9,7 +9,7 @@ const RotatingCircle = () => {
         reverse 
         duration={4} 
         radius={5}
-        className="text-[#e11414]  text-[17px] tracking-[0.9px]"
+        className="text-[#FF0200]  text-[17px] tracking-[0.9px]"
       >
         EXPERIENCES • EXPERIENCES • 
       </SpinningText>

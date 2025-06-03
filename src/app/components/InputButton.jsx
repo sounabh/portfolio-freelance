@@ -27,7 +27,7 @@ const InputButton = () => {
   }, []);
 
   return (
-    <div className="relative mt-14 flex justify-center">
+    <div className="relative mt-5 mr-18 flex justify-center">
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -39,7 +39,7 @@ const InputButton = () => {
         className="relative -top-2 rounded-[5.5rem] shadow-[0px_10px_45px_0px_#00000017]"
       >
         <Button
-          borderRadius="1.5rem"
+          borderRadius="1.1rem"
           duration={3000}
           className="bg-white border border-[#dad5d5db] flex items-center px-4 py-2"
         >
