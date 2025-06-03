@@ -1,23 +1,21 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import clsx from 'clsx'
 
 const Heading = () => {
+  const letters = ['I', 'd', 'e', 's', 'i', 'g', 'n']
+
   return (
     <div className="relative">
-      <h1
-        className="relative -top-[70px] font-apercu text-left max-w-full overflow-visible px-8 sm:pl-[150px] md:pl-[250px] lg:pl-[325px]"
-      >
-        {['I', 'd', 'e', 's', 'i', 'g', 'n'].map((letter, index) => (
+      <h1 className="relative -top-[70px] text-left max-w-full overflow-visible px-8 sm:pl-[150px] md:pl-[250px] lg:pl-[355px] font-apercu">
+        {letters.map((letter, index) => (
           <motion.span
             key={index}
-            className="font-medium relative inline-block"
-            style={{
-              fontFamily: 'Apercu, sans-serif',
-              fontSize: '295px',
-              lineHeight: '415px',
-              letterSpacing: '-29px',
-              left: index === 0 ? '-57px' : '0',
-            }}
+            className={clsx(
+              'relative inline-block font-regular',
+              'text-[325px] leading-[415px] tracking-[-35px]',
+              index === 0 && '-left-[57px]'
+            )}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{

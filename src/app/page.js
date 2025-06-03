@@ -24,7 +24,7 @@ const FadeInMotion = ({ children, delay = 0.8 }) => (
 
 const Page = () => {
   return (
-    <div className="min-h-screen w-screen bg-white overflow-x-hidden overflow-y-hidden px-6 py-12 relative">
+    <div className="min-h-screen w-screen bg-white overflow-x-hidden overflow-y-hidden px-6 py-20 relative">
       {/* Keyframes injected correctly in JSX */}
       <style>{`
         @keyframes scalePulse {
@@ -59,7 +59,7 @@ const Page = () => {
       {/* Rotating Circle with Inner Dot */}
       <FadeInMotion delay={1.4}>
         <div className="relative flex justify-center -mt-[204px]">
-          <div className="relative -right-[395px]">
+          <div className="relative -right-[415px]">
             <RotatingCircle />
             {/* Inner red dot in center */}
             <motion.div

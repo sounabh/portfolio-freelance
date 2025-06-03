@@ -36,7 +36,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en"  name="viewport" content="width=device-width, initial-scale=1" >
       <body
         className={`${apercu.variable} ${sfRegular.variable} antialiased`}
       >
