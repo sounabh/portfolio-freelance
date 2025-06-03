@@ -38,17 +38,20 @@ const Page = () => {
       `}</style>
 
       {/* Background blobs */}
-      <div className="absolute top-[-20%] left-[-10%] w-[24%] h-[45%] rounded-full 
-        bg-gradient-to-br from-[#d4ba13] via-[#e75f29] to-[#e86c2a] 
-        blur-3xl spin-custom" />
+      <div
+        aria-hidden="true"
+        className="absolute top-[-20%] left-[-10%] w-[24%] h-[45%] rounded-full bg-gradient-to-br from-[#d4ba13] via-[#e75f29] to-[#e86c2a] blur-3xl spin-custom"
+      />
 
-      <div className="absolute top-[-30%] left-[26%] w-[45%] h-[45%] rounded-full 
-        bg-gradient-to-br from-[#d94930] via-[#e11a1a] to-[#e66037] 
-        blur-3xl spin-custom" />
+      <div
+        aria-hidden="true"
+        className="absolute top-[-30%] left-[26%] w-[45%] h-[45%] rounded-full bg-gradient-to-br from-[#d94930] via-[#e11a1a] to-[#e66037] blur-3xl spin-custom"
+      />
 
-      <div className="absolute top-[-25%] right-[-15%] w-[25%] h-[45%] rounded-full 
-        bg-gradient-to-br from-[#e1ba1c] via-[#ca7f07] to-[#f06253] 
-        blur-3xl spin-custom" />
+      <div
+        aria-hidden="true"
+        className="absolute top-[-25%] right-[-15%] w-[25%] h-[45%] rounded-full bg-gradient-to-br from-[#e1ba1c] via-[#ca7f07] to-[#f06253] blur-3xl spin-custom"
+      />
 
       {/* Heading */}
       <Heading />
@@ -73,9 +76,7 @@ const Page = () => {
       </FadeInMotion>
 
       {/* Description Card */}
-    
-        <DescriptionCard />
-    
+      <DescriptionCard />
 
       {/* Input + Button */}
       <FadeInMotion delay={2.3}>
@@ -84,12 +85,9 @@ const Page = () => {
         </div>
       </FadeInMotion>
 
-
       {/* Bottom Navigation */}
       <div
-        className="fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white 
-          w-[400px] py-[18px] px-[30px] rounded-t-[16px] border border-[#e6e6e6] 
-          flex items-center justify-center z-50"
+        className="fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white w-[400px] py-[18px] px-[30px] rounded-t-[16px] border border-[#e6e6e6] flex items-center justify-center z-50"
         style={{
           boxShadow: "0px -2px 12px 0px #0000000d",
         }}
