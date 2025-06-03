@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 
 const Heading = () => {
   return (
-    <div>
-        <h1       
-        className="relative -top-[70px] font-apercu text-left max-w-[100vw] overflow-visible"       
-        style={{ left: '325px' }}     
+    <div className="relative">
+      <h1       
+        className="relative -top-[70px] font-apercu text-left max-w-[100vw] overflow-visible pl-[325px]"     
       >       
         {['I', 'd', 'e', 's', 'i', 'g', 'n'].map((letter, index) => (         
           <motion.span           
@@ -17,7 +16,7 @@ const Heading = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{             
               duration: 0.5,             
-              delay: index * 0.2, // Faster letter animation
+              delay: index * 0.2,
               ease: [0.25, 0.46, 0.45, 0.94],
               type: "tween"
             }}         
@@ -27,7 +26,7 @@ const Heading = () => {
         ))}     
       </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Heading
+export default Heading;
